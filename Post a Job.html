@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post a Job</title>
+	<style type="text/css">
+		body
+		{
+			resize: none;
+		}
+		h4
+		{
+			font-family: Arial Black;
+			margin-left: 50px;
+		}
+		ul
+		{
+			font-family: Arial;
+			list-style-type: none;
+			text-align: right;
+			margin-top: -40px;
+			margin-right: 380px;
+			word-spacing: 40px;
+			font-size: 15px;
+		}
+		ul li
+		{
+			display: inline;
+		}
+		#b1
+		{
+			background-color:#9966ff;
+			border-radius: 5px;
+			color: white;
+			font-family: Arial;
+			height: 40px;
+			width: 90px;
+			padding: 10px;
+			margin-top: 0%;
+			margin-left: 101%;
+			cursor: pointer;
+		}
+		#b2
+		{
+			background-color: #ff1a1a;
+			border-radius: 5px;
+			font-family: Arial;
+			color: white;
+			height: 40px;
+			width: 100px;
+			padding: 10px;
+			margin-top: -1%;
+			margin-left: 110%;
+			cursor: pointer;
+		}
+		#d1 
+		{
+			background-image: url("boy.jpg");
+			background-repeat: no-repeat;
+		}
+		h5
+		{
+			color: grey;
+			font-family: Arial;
+			font-size: 10px;
+			margin-top: 30%;
+			margin-left: 16%;
+			padding-bottom: 0%;
+			word-spacing: 4px;
+		}
+		h3
+		{
+			font-family: Arial Black;
+			font-weight: bolder;
+			margin-top: 0%;
+			margin-left: 15%;
+			padding-bottom: 60%;
+			font-size: 300%;
+			word-spacing: 8px;
+		}
+		#d2
+		{
+			background-color: #f5f5f0;
+			margin-top: -50%;
+		}
+		nav
+		{
+			background-color: red;
+		}
+		.card 
+		{
+  			/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  			padding-top:12%;
+  			padding-right: 15%;
+  			padding-left: 8%;
+  			padding-bottom: 6%;
+ 			background-color: #f1f1f1;
+ 			margin-top: -60%;
+ 		}
+ 		.card1
+		{
+  			/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  			padding-top: 6%;
+ 			background-color: #f1f1f1;
+ 			margin-top: -59.90%;
+ 			margin-left: 48.60%;
+ 			margin-right: -7%;
+ 			height: 280px;
+ 			width: 770px;
+ 		}
+ 		.card2
+ 		{
+ 			margin-left: 48%;
+ 			margin-right: 5%;
+ 			margin-top: 4%;
+ 			height: 210px;
+ 			width: 855px;
+ 		}
+
+		aside 
+		{
+ 			grid-area: sidebar;
+  			background: white;
+		    padding-top: 20px;
+		    padding-left: 0px;
+		    padding-bottom: 20px;
+		    padding-right: 50px;
+		    width: 35%;
+		    height: 100%;
+		    margin-left: 12%;
+		    margin-top: -5%;
+		}
+		#c1
+		{
+			margin-top: 5%;
+			margin-left: 5%;
+			padding-top: 2px;
+		}
+		#c2
+		{
+			margin-left: 5%;
+			margin-top: 3%;
+		}
+		.form
+		{
+			font-family: Arial;
+		}
+		.form1
+		{
+			font-family: Arial;
+		}
+		.form2
+		{
+			font-family: Arial;
+		}
+		#h1
+		{
+			font-family: Arial;
+			margin-top: 3%;
+			margin-left: 5%;
+			font-size: 15px;
+			margin-bottom: 4%;
+		}
+		#h2
+		{
+			font-family: Arial;
+			margin-top: 4%;
+			margin-left: 5%;
+			font-size: 15px;
+			margin-bottom: 4%;
+		}
+		#h3
+		{
+			font-family: Arial;
+			margin-top: -2%;
+			margin-left: 5%;
+			font-size: 15px;
+			margin-bottom: 4%;
+		}
+		#h4
+		{
+			font-family: Arial;
+			margin-top: 4%;
+			margin-left: 5%;
+			font-size: 15px;
+			margin-bottom: 4%;
+		}
+		#h5
+		{
+			font-family: Arial;
+			margin-top: 5%;
+			margin-left: 5%;
+			font-size: 15px;
+			margin-bottom: 4%;
+		}
+		#txt1
+		{
+			margin-left: 5%;
+			border-radius: 4px;
+			height: 30px;
+			margin-top: -3%;
+		}
+		#txt2
+		{
+			margin-left: 5%;
+			border-radius: 4px;
+			height: 30px;
+			margin-top: -3%;
+		}		
+		#p1
+		{
+			margin-left: 5%;
+			font-family: Arial;
+			font-size: 25px;
+			margin-top: 5%;
+			margin-bottom: 2%;
+		}
+		#p2
+		{
+			margin-left: 5%;
+			font-family: Arial;
+			font-size: 25px;
+			margin-top: 5%;
+			margin-bottom: 2%;
+			color: black;
+		}
+		#p3
+		{
+			margin-left: 5%;
+			font-family: Arial;
+			font-size: 25px;
+			margin-top: 5%;
+			margin-bottom: -3%;
+			color: black;
+		}
+		#p6
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 5%;
+			margin-bottom: -3%;
+			color: grey;
+		}
+		#p7
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 1%;
+			margin-bottom: -3%;
+			color: grey;
+		}
+		#p8
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 1%;
+			margin-bottom: -3%;
+			color: blue;
+		}
+		#p9
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 1%;
+			margin-bottom: -3%;
+			color: blue;
+		}
+		#p10
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 25px;
+			margin-top: 1%;
+			margin-bottom: -3%;
+			color: black;
+		}
+		#p11
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 6%;
+			margin-bottom: -3%;
+			color: grey;
+		}
+		#p12
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 6%;
+			margin-bottom: -3%;
+			color: grey;
+		}
+		#p13
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 6%;
+			margin-bottom: -3%;
+			color: grey;
+		}
+		#p14
+		{
+			margin-left: 6%;
+			font-family: Arial;
+			font-size: 15px;
+			margin-top: 6%;
+			margin-bottom: -3%;
+			color: grey;
+		}
+
+		#p4
+		{
+			margin-left: 5%;
+			font-family: Arial;
+			font-size: 25px;
+			margin-top: 5%;
+			margin-bottom: -3%;
+			color: black;
+		}
+		#fh1
+		{
+			font-family:Arial;
+			font-size: 25px;
+			color: white;
+		}
+		#fp1,#fp2
+		{
+			color: white;
+			font-size: 15px;
+			font-family: Arial;
+		}
+		#r1,#r2,#r3,#r4,#r5
+		{
+			margin-left: 5%;
+			padding: 10px;
+			margin-top: 0%;
+		}
+		#txt3
+		{
+			margin-left: 5%;
+			border-radius: 4px;
+			height: 30px;
+			margin-top: -3%;
+		}
+		#txta1
+		{
+			margin-left: 5%;
+			border-radius: 4px;
+			max-height: 200px;
+		}
+		#fi1
+		{
+			border-radius: 4px;
+			height: 28px;
+		}
+		#bt1
+		{
+			background-color: #6666ff;
+			color: white;
+			border-radius: 4px;
+			margin-left: 5%;
+			padding: 10px;
+			width: 120px;
+			margin-top: 3%;
+		}
+		#bt2
+		{
+			background-color: #6666ff;
+			color: white;
+			border-radius: 4px;
+			margin-left: 5%;
+			padding: 10px;
+			width: 120px;
+			margin-top: 8%;
+		}
+		#fbt1
+		{
+			background-color: #ff1a1a;
+			color: white;
+			border-radius: 4px;
+			height: 35px;
+			padding: 0px;
+			width: 90px;
+		}
+		.footer 
+		{
+  			grid-area: footer;
+  			margin-top: 20%;
+  			padding: 20px;
+  			text-align: center;
+  			background-color: #6666ff;
+  			height: 180px;
+		}
+		a
+		{
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="d1">
+		<header>
+			<h4>Jobpply</h4>
+			<ul><li><a href="Assign1.html">Home</a></li>
+				<li> About</li>
+				<li> Candidates</li>
+				<li> Blog</li>
+				<li> Contact</li>
+			</ul>
+
+				<ul>
+					<li id="l1"><button id="b1" onclick="window.location.href = 'Assign2.html';">Post a Job</button></li>
+				</ul>
+			<form target="_blank">
+				<ul>
+					<li><button id="b2" onclick="window.location.href = 'Assign3.html';" >Want a Job</button></li>
+				</ul>
+			</form>
+
+			<h5>HOME > &nbsp &nbspNEW JOB POST</h5>
+			<h3>Post A Job</h3>
+		</header>	
+	</div>
+
+ 	 	<form class="form">
+    			<div class="card">
+    				<aside>
+  						<input id="c1" type="checkbox" value="$500 For 30 days"><span style="color: green;">$500</span><span style="color: grey; font-size: 15px;"> For 30 days</span><br>
+  						<input id="c2" type="checkbox" value="$300/Monthly Recurring"><span style="color: green;">$300</span><span style="color: grey; font-size: 15px;"> / Monthly Recurring</span><br>
+  						<h5 id="h1">Job Title</h5>
+  						<input id="txt1" type="text" placeholder="  eg. Professional UI/UX Designer" size="60px">
+  						<h5 id="h2">Company</h5>
+  						<input id="txt2" type="text" placeholder="  eg. Facebook,Inc." size="60px">
+  						<p id="p1">Job Type</p>
+  						<input id="r1" type="radio" name="type" value="full time"><span style="color: grey; font-size: smaller;">Full Time</span><br>
+  						<input id="r2" type="radio" name="type" value="part time"><span style="color: grey; font-size: smaller;">Part Time<br>
+  						<input id="r3" type="radio" name="type" value="freelance"><span style="color: grey; font-size: small;">Freelance<br>
+  						<input id="r4" type="radio" name="type" value="internship"><span style="color: grey; font-size: small;">Internship<br>
+  						<input id="r5" type="radio" name="type" value="termporary"><span style="color: grey; font-size: small;">Termporary<br>
+  						<p id="p2">Location</p>
+  						<input id="txt3" type="text" placeholder="  Western city, UK " size="60px">
+  						<p id="p3">Job Description</p><br>
+  						<textarea id="txta1" style="height: 150px; width: 410px;"></textarea>
+  						<button id="bt1">Post</button>
+  					</aside>
+      			</div>
+  		</form>
+
+  		<form class="form1">
+    			<div class="card1">
+    				<aside>
+    					<p id="p4">Contact Info</p><br>
+    					<br>
+    					<h5 id="h3">Address</h5>
+    					<p id="p6">203 Fake St.Mountain View, San</p><br>
+    					<p id="p7">Francisco, California, USA</p>
+    					<br>
+    					<h5 id="h4">Phone</h5>
+    					<p id="p8">+1 232 3235 324</p>
+    					<br>
+    					<h5 id="h5">Email Address</h5>
+    					<p id="p9">[email protected]</p>
+
+  					</aside>
+      			</div>
+  		</form>
+
+  		<form class="form2">
+    			<div class="card2">
+    				<aside>
+    					<p id="p10">More Info</p>
+    					<p id="p11">Lorem ipsum dolor sit amet, consectetur
+    					<p id="p12"> adipiscing elit.Ipsa ad iure porro mollitia </p>
+    					<p id="p13"> architecto hic consectetur. Distinctio nisi </p>
+    				    <p id="p14">perferendis dolore,ipsa consectetur</p>
+    					<button id="bt2">Learn More</button>
+
+  					</aside>
+      			</div>
+  		</form>
+
+	<footer>
+  			<div class="footer">
+  				<p id="fh1">Subscribe to our Newsletter</p>
+  				<p id="fp1">Far far away, behind the word mountains, far from the countries Vokalia and</p>
+  				<p id="fp2"> Consonantia, there live the blind texts. Separated they live in </p>
+  				<input id="fi1" type="text" size="80px" placeholder="  Enter email address"><button id="fbt1">Subscribe</button>
+  			</div> 
+	</footer>
+		
+
+	</body>
+</html>
